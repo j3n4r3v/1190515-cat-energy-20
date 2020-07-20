@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Evgeniy Reva](https://up.htmlacademy.ru/adaptive/20/user/1190515).
-* Наставник: `Неизвестно`.
+* Наставник: `Кексобот`.
 
 ---
 
