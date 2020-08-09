@@ -1,0 +1,25 @@
+.nav-list {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.nav-list__item {
+  text-align: center;
+  margin-left: -3px;
+  padding: 22px 0 23px 0;
+  border-top: 1px solid @nav-border;
+
+  &--active {
+    cursor: default;
+  }
+}
+
+.nav-list__item:last-child {
+  border-bottom: 1px solid @nav-border;
+}
+
+.nav-list__link {
+  color: @basic-black;
+}

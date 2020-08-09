@@ -1,0 +1,170 @@
+.example {
+  font-family: "Arial", sans-serif;
+  background-color: @example-color;
+}
+
+.example__container {
+  padding-top: 27px;
+}
+
+.example__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: @basic-black;
+  margin: 0;
+  margin-bottom: 33px;
+  margin-left: -1px;
+  padding: 0;
+}
+
+.example__text {
+  color: @basic-grey;
+  margin: 0 auto;
+  margin-left: -1px;
+  margin-bottom: 12px;
+}
+
+.example__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
+  margin-bottom: 34px;
+}
+
+.example-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example-list__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid @special-grey-2;
+  border-radius: 3px;
+  padding-top: 13px;
+  margin-left: -1px;
+  margin-right: 33px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.example-list__value {
+  width: 122px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic-black;
+  margin-bottom: -7px;
+}
+
+.example-list__subtitle {
+  position: relative;
+  top: 17px;
+  width: 77px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: @basic-grey;
+  background-color: @example-color;
+}
+
+.weight__subtitle {
+  left: 21px;
+  width: 80px;
+}
+
+.time-left__subtitle {
+  right: -22px;
+  width: 77px;
+}
+
+.example__caption {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+  margin-left: -2px;
+}
+
+.example__expenses,
+.example__cost {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic-black;
+  margin: 0;
+}
+
+.example__cost {
+  text-transform: uppercase;
+}
+
+.example__progress {
+  padding-bottom: 26px;
+}
+
+.example__image {
+  display: flex;
+  margin-bottom: 22px;
+}
+
+.example__illustration {
+  width: 320px;
+  height: 240px;
+
+  &--before {
+    background-image: url("../img/before-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: -1px 0;
+  }
+}
+
+.example__buttons {
+  display: flex;
+  padding: 0 7px 0 47px;
+  align-items: center;
+}
+
+.example__progress-bar {
+  width: 84px;
+  height: 14px;
+  background: @base-color;
+  border: 1px solid @special-grey-2;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 3px 0 4px 5px;
+}
+
+.example-buttons__progress {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 71px;
+  min-height: 40px;
+  padding: 0 10px;
+  border: 0;
+  background: @example-color;
+}
+
+.example__progress-toggle {
+  background: @basic-green;
+  border-radius: 6px;
+  width: 35px;
+  height: 6px;
+}
