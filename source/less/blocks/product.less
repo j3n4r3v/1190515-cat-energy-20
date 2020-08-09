@@ -1,0 +1,138 @@
+.product {
+  display: grid;
+  grid-template-rows: 112px auto;
+  grid-template-columns: repeat(2, 140px);
+  grid-row-gap: 13px;
+}
+
+.product__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 1px 0 15px 0;
+}
+
+.product__title-bc,
+.product__title-fs,
+.product__title-fb,
+.product__title-bs,
+.product__title-bb,
+.product__title-rs {
+  margin: 1px 0 15px 0;
+}
+
+.product__image {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.product__content {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-left: -2px;
+}
+
+.chicken__small {
+  position: relative;
+  top: 14px;
+  left: 34px;
+}
+
+.chicken__big {
+  position: relative;
+  top: 11px;
+  left: 26px;
+}
+
+.fish__small {
+  position: relative;
+  left: 34px;
+  top: 27px;
+}
+
+.fish__big {
+  position: relative;
+  left: 26px;
+  top: 11px;
+}
+
+.buckwheat__small {
+  position: relative;
+  left: 34px;
+  top: 30px;
+}
+
+.buckwheat__big {
+  position: relative;
+  left: 26px;
+  top: 12px;
+}
+
+.rice__small {
+  position: relative;
+  left: 32px;
+  top: 24px;
+}
+
+.product__button {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  position: relative;
+  left: -2px;
+  padding: 10px 108px 10px 108px;
+}
+
+.product__button-rs {
+  top: 3px;
+}
+
+.product__button-bb,
+.product__button-bs, {
+  top: 2px;
+}
+
+.product__buttom-fb,
+.product__buttom-fs {
+  top: 1px;
+}
+
+.product__button-cs,
+.product__button-bc,
+.product__buttom-fs,
+.product__buttom-fb,
+.product__button-bs,
+.product__button-bb,
+.product__button-rs {
+  position: relative;
+  left: -2px;
+}
+
+.product__info {
+  width: 142px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 13px;
+  color: @basic-grey;
+  border-collapse: collapse;
+}
+
+.product__td-upper {
+  text-align: right;
+  padding: 0;
+  padding-right: 3px;
+}
+
+.product__td-center,
+.product__td-bottom {
+  text-align: right;
+  padding: 0;
+}
