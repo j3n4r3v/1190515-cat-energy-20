@@ -1,25 +1,21 @@
-.main-nav__toggle {
-  height: 20px;
-  width: 20px;
-  background-image: url("../img/icon-close.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-color: transparent;
+.main-nav {
+  max-height: 213px;
+  transition-property: max-height;
+  overflow: hidden;
 
-  &--position {
-    border: 0;
-    position: absolute;
-    right: 23px;
-    top: -45px;
+  @media (min-width: @tablet-width) {
+    overflow: visible;
   }
 }
 
-.main-nav__header {
-  position: relative;
+.main-nav--closed-animation {
+  @media (max-width: @mobile-width) {
+    max-height: 0;
+  }
 }
 
-.main-nav__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.main-nav--closed {
+  @media (max-width: @mobile-width) {
+    display: none;
+  }
 }
