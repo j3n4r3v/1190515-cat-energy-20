@@ -1,50 +1,96 @@
 .page-footer {
-  background-color: @program-color;
+  padding-bottom: 21px;
+  padding-top: 39px;
+  background-color: @shadow-white;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 58px;
+    padding-top: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 54px;
+  }
 }
 
-.page-footer__contacts-logo {
-  padding: 40px 0 28px 75px;
+.page-footer__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-.page-footer__contacts-list {
-  list-style: none;
-  padding: 24px 0 19px 73px;
-  margin: 0;
+.page-footer__logo {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  padding-bottom: 28px;
+  border-bottom: solid 1px @border-grey;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 2px;
+  }
 }
 
-.social-list {
+.page-footer__socials {
+  padding-left: 0;
+  padding-top: 22px;
+  padding-bottom: 18px;
+  width: 127px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    min-height: 33px;
+    padding: 0;
+    margin-right: 130px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -5px;
+    margin-right: auto;
+    width: 125px;
+    padding-left: 15px;
+  }
+}
+
+.page-footer__info {
   display: flex;
-  flex-wrap: wrap;
-  border-top: 1px solid @border-9;
-  border-bottom: 1px solid @border-9;
-}
-
-.social-list__item:nth-child(1) {
-  margin-right: 36px;
-}
-
-.social-list__item:nth-child(2) {
-  margin-right: 38px;
-}
-
-.social-list__item:nth-child(3) {
-  margin-top: -3px;
-}
-
-.copyright__link--academy {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  color: @basic-grey;
-  margin-top: -6px;
-  margin-left: -2px;
-}
-
-.page-footer__contacts-copyright {
-  padding: 28px 0;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  border-top: solid 1px @border-grey;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -7px;
+    width: 163px;
+    border-top: none;
+    margin-right: 1px;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -1px;
+  }
 }
