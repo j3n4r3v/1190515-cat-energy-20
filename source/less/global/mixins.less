@@ -1,15 +1,15 @@
-@mixin normalize-list {
+.reset-list() {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-@mixin normalize-link {
+.normalize-link() {
   text-decoration: none;
   color: inherit;
 }
 
-@mixin border-bottom {
+.border-bottom() {
   content: "";
   position: absolute;
   width: calc(100% + 12vw);
@@ -22,7 +22,7 @@
   }
 }
 
-@mixin green-line {
+.green-line() {
   content: "";
   position: absolute;
   background-color: @basic-green;

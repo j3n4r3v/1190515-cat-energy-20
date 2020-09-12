@@ -5,14 +5,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Кэт Энерджи</title>
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper page-header__wrapper--active-menu">
-      <a href="#" class="page-header__logo" aria-label="Кэт Энерджи">
+      <a href="index.html" class="page-header__logo" aria-label="Кэт Энерджи">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" />
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
@@ -25,14 +24,14 @@
     </div>
     <nav class="page-header__nav main-nav">
       <ul class="main-nav__list nav-list nav-list--active">
-        <li class="nav-list__item nav-list__item--index nav-list__item--current">
-          <a class="nav-list__link" href="#">Главная</a>
+        <li class="nav-list__item nav-list__item--index">
+          <a class="nav-list__link" href="index.html">Главная</a>
         </li>
         <li class="nav-list__item nav-list__item--index">
           <a class="nav-list__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="nav-list__item nav-list__item--index">
-          <a class="nav-list__link" href="form.html">Подбор программы</a>
+        <li class="nav-list__item nav-list__item--index nav-list__item--current">
+          <a class="nav-list__link" href="#">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -93,7 +92,7 @@
               <input class="program-selection__text-input" id="email" type="email" placeholder="kuklachev@gmail.com"
                 required name="email" />
               <svg class="program-selection__icon program-selection__icon--mail" width="20" height="14">
-<!--                 <use xlink:href="img/sprite.svg#sprite-icon-mail"></use> -->
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
               </svg>
             </label>
             <label class="program-selection__text-label">
@@ -101,7 +100,7 @@
               <input class="program-selection__text-input" id="phone" type="tel" placeholder="8 (960) 900-60-90"
                 required name="telephone" />
               <svg class="program-selection__icon program-selection__icon--phone" width="20" height="20">
-<!--                 <use xlink:href="img/sprite.svg#sprite-icon-phone"></use> -->
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
             </label>
           </div>
@@ -151,10 +150,8 @@
     <section class="contacts contacts--grey">
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="mobile-wrapper contacts__wrapper">
-        <span class="contacts__title">Приглашаем
-          к сотрудничеству дилеров!</span>
-        <address class="contacts__address">
-          ул. Большая Конюшенная, д. 19/8
+        <span class="contacts__title"> Приглашаем к сотрудничеству дилеров!</span>
+        <address class="contacts__address"> ул. Большая Конюшенная, д. 19/8
           Санкт-Петербург
         </address>
       </div>
@@ -177,7 +174,10 @@
                 img/bg-map-desktop@1x.png 1x,
                 img/bg-map-desktop@2x.png 2x
               " />
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x" />
+          <source media="(min-width: 768px)" srcset="
+                img/bg-map-tablet@1x.png 1x,
+                img/bg-map-tablet@2x.png 2x
+              " />
           <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
             alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" />
         </picture>
@@ -193,21 +193,21 @@
         <li>
           <a class="socials__item socials__item--vk" href="#" aria-label="вконтакте">
             <svg class="socials__icon" width="22" height="12">
-<!--               <use xlink:href="img/sprite.svg#sprite-icon-vk"></use> -->
+              <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
             </svg>
           </a>
         </li>
         <li>
           <a class="socials__item socials__item--inst" href="#" aria-label="инстаграм">
             <svg class="socials__icon" width="16" height="16">
-<!--               <use xlink:href="img/sprite.svg#sprite-icon-insta"></use> -->
+              <use xlink:href="img/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li>
           <a class="socials__item socials__item--fb" href="#" aria-label="фейсбук">
             <svg class="socials__icon" width="16" height="16">
-<!--               <use xlink:href="img/sprite.svg#sprite-icon-fb"></use> -->
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>

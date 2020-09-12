@@ -65,7 +65,7 @@
   }
 
   &::after {
-    @include border-bottom;
+    .border-bottom();
     bottom: 0;
   }
 
@@ -76,7 +76,7 @@
 
     @media (min-width: @tablet-width) {
       margin-top: 48px;
-      padding-top: 29px 0 29px 27px;
+      padding: 29px 0 29px 27px;
       max-width: 628px;
       border: 1px solid @light-grey;
       margin-left: 40px;
@@ -164,7 +164,7 @@
   position: relative;
 
   &::after {
-    @include green-line;
+    .green-line();
 
     left: 0;
     width: 94vw;

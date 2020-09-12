@@ -11,7 +11,7 @@
   }
 
   &::before {
-    @include green-line;
+    .green-line();
     left: 6vw;
     width: 94vw;
     top: 43px;
@@ -33,7 +33,7 @@
 .add-goods__list {
   box-sizing: border-box;
 
-  @include normalize-list;
+  .reset-list();
   margin-top: 34px;
 
   @media (min-width: @tablet-width) {
