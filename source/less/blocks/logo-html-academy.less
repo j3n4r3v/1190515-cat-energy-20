@@ -1,0 +1,45 @@
+.logo-html-academy__link,
+.logo-html-academy__text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: @special_dark-grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo-html-academy__text {
+  margin-right: 21px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo-html-academy__img {
+  fill: @special_grey-2;
+
+  &:hover {
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo-html-academy__link {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+
+  @media (min-width: @tablet-width) {
+    width: 164px;
+  }
+}

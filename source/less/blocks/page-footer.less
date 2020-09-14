@@ -1,96 +1,148 @@
-.page-footer {
-  padding-bottom: 21px;
-  padding-top: 39px;
-  background-color: @shadow-white;
+.page-footer__cooperation,
+.page-footer__cooperation-form {
+  background-color: @grey;
+  position: relative;
+  padding-top: 31px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 58px;
-    padding-top: 57px;
+    padding-top: 29px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 55px;
-    padding-bottom: 54px;
+    background-color: @white;
+    padding: 0;
   }
 }
 
-.page-footer__wrapper {
+.page-footer__cooperation-form {
+  padding-top: 28px;
+}
+
+.page-footer__text-logo-wrapper {
+  min-width: 280px;
+  padding: 40px 20px 28px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    min-width: 130px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 49px;
+  }
+}
+
+.page-footer__list-wrapper {
+  border-bottom: 1px solid @special_grey-3;
+  border-top: 1px solid @special_grey-3;
+  padding: 20px;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    padding: 0;
+    min-width: 130px;
+    margin-left: 25px;
+  }
+}
+
+.page-footer__list {
+  min-width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  .reset-list();
+}
+
+.page-footer__link-wrapper {
+  background-color: @grey;
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 708px;
+    padding: 53px 30px 61px;
     align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 1220px;
+    padding: 58px 49px 52px 60px;
   }
 }
 
-.page-footer__logo {
-  display: block;
-  box-sizing: border-box;
-  text-align: center;
-  padding-bottom: 28px;
-  border-bottom: solid 1px @border-grey;
+.page-footer__logo-html {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 280px;
+  padding: 0 20px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  color: @special_dark-grey;
 
   @media (min-width: @tablet-width) {
-    border-bottom: none;
-    padding-bottom: 0;
+    padding: 0;
+    min-width: 163px;
+    justify-content: space-between;
+    margin-top: -2px;
   }
 
+  @media (min-width: @desktop-width) {
+    padding-right: 47px;
+  }
+}
+
+.page-footer__social-link-svg {
+  fill: @special_grey-2;
+
+  &:hover {
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__social-link-svg--vk {
+  @media (min-width: @tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.page-footer__social-link-svg--insta {
+  @media (min-width: @tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.page-footer__social-link-svg--fb {
+  @media (min-width: @tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
+}
+
+.page-footer__text-logo {
   &:hover {
     opacity: 0.8;
   }
 
   &:active {
     opacity: 0.6;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-top: 2px;
-  }
-}
-
-.page-footer__socials {
-  padding-left: 0;
-  padding-top: 22px;
-  padding-bottom: 18px;
-  width: 127px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-
-  @media (min-width: @tablet-width) {
-    min-height: 33px;
-    padding: 0;
-    margin-right: 130px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: -5px;
-    margin-right: auto;
-    width: 125px;
-    padding-left: 15px;
-  }
-}
-
-.page-footer__info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 22px;
-  border-top: solid 1px @border-grey;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media (min-width: @tablet-width) {
-    margin-top: -7px;
-    width: 163px;
-    border-top: none;
-    margin-right: 1px;
-    margin-left: 0;
-    padding: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: -1px;
   }
 }
