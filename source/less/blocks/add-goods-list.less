@@ -1,6 +1,6 @@
 .add-goods-list {
   .reset-list();
-  padding-bottom: 41px;
+  padding-bottom: 43px;
 
   @media (min-width: @tablet-width) {
     border: 1px solid @special_grey;
@@ -28,7 +28,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 16px;
+    padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 0;
     padding-left: 0;
@@ -82,7 +82,7 @@
   @media (min-width: @desktop-width) {
     min-width: 245px;
     border: none;
-    padding-bottom: 0;
+    margin-bottom: 0;
     padding-top: 0;
   }
 }
@@ -94,6 +94,10 @@
     position: relative;
     padding-top: 11px;
     top: -2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
   }
 }
 
@@ -124,7 +128,7 @@
 
   @media (min-width: @desktop-width) {
     position: relative;
-    top: -3px;
+    top: 0;
     left: 0;
   }
 }
@@ -179,7 +183,9 @@
   @media (min-width: @desktop-width) {
     width: 244px;
     margin-top: 0;
-    padding-bottom: 11px;
+    padding-bottom: 9px;
+    position: relative;
+    top: -2px;
   }
 
   &:hover {
