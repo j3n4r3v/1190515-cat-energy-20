@@ -8,6 +8,66 @@
     background-image: url("../img/index-background-mobile@2x.jpg");
   }
 
+  .promo-main__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    color: @white;
+    margin: 0;
+    padding-bottom: 25px;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: normal;
+
+    @media (min-width: @tablet-width) {
+      color: @black;
+      font-size: 60px;
+      line-height: 60px;
+      text-align: left;
+      padding-left: 87px;
+      width: 516px;
+      padding-top: 60px;
+      padding-bottom: 41px;
+    }
+
+    @media (min-width: @desktop-width) {
+      color: @black;
+      font-size: 60px;
+      line-height: 60px;
+      padding-left: 87px;
+      padding-top: 223px;
+    }
+  }
+
+  .promo__text {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: @white;
+    margin: 0;
+    padding-bottom: 29px;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+      color: @black;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: left;
+      padding-left: 89px;
+    }
+
+    @media (min-width: @desktop-width) {
+      color: @black;
+      margin: 0;
+      font-size: 20px;
+      line-height: 20px;
+      padding-left: 87px;
+      margin-bottom: 52px;
+      padding-bottom: 0;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     background-image: none;
     background-color: @white;
